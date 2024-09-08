@@ -18,8 +18,8 @@ Motor intake(11);
 Motor armR(14);
 Motor armL(13);
 Controller master(E_CONTROLLER_MASTER);
-adi::Pneumatics Hang ('2', true);
-
+adi::Pneumatics hang ('2', true);
+adi::Pneumatics mogo ('1' ,true);
 // sensor ports
 Rotation odomVerticalPod(18);
 Rotation odomHorizontalPod(19);
