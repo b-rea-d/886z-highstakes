@@ -6,15 +6,15 @@
 #include "pros/misc.h"
 #include "pros/motors.h"
 
-Motor Lf(-12); // number (06) is the cartridge
-Motor Lf2 (14);
-Motor Rf2 (-20);
-Motor Lb(-17);
-Motor Rf(18);
-Motor Rb(19);
-Motor conveyer(6);
+Motor Lf(14); // number (06) is the cartridge
+Motor Lf2 (-13);
+Motor Rf2 (-16);
+Motor Lb(15);
+Motor Rf(-19);
+Motor Rb(18);
 
-Motor intake(11);
+
+Motor intake(1);
 Motor armR(14);
 Motor armL(13);
 Controller master(E_CONTROLLER_MASTER);
@@ -29,14 +29,14 @@ adi::Pneumatics intup('4', true);
 
 // motor groups
 pros::MotorGroup left_side_motors({
-    -12,
-    -17,
     14,
+    15,
+    -13,
 });
 pros::MotorGroup right_side_motors({
     18,
-    19,
-    -20, 
+    -19,
+    -16, 
 });
 
 // Lemlib drivetrain  struct
@@ -197,12 +197,12 @@ void opcontrol() {
     // armL.move(master.get_analog(ANALOG_RIGHT_Y));
 
     if (master.get_digital(pros::E_CONTROLLER_DIGITAL_L1)) {
-      intake.move(-127);
-      conveyer.move(-100);
+      intake.move(127);
+    
 
     } else if (master.get_digital(pros::E_CONTROLLER_DIGITAL_L2)) {
-      intake.move(127);
-      conveyer.move(100);
+      intake.move(-127);
+ 
     } else if (master.get_digital(pros::E_CONTROLLER_DIGITAL_Y)) {
       distance.get_proximity();
 
@@ -217,7 +217,7 @@ void opcontrol() {
 
     else {
       intake.move(0);
-      conveyer.move(0);
+     
     }
 
     if (master.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_A)) {
