@@ -85,18 +85,20 @@ extern Motor Rb;
 extern Motor Lf2;
 extern Motor Rf2;
 extern Motor intake;
-
+extern Motor ladybrown;
 extern adi::DigitalOut mogo;
 extern adi::DigitalOut hang;
 extern Imu imu;
+extern Rotation brown;
 extern Rotation odomVerticalPod; 
 extern Rotation odomHorizonotalPod;
 extern Controller master;
 extern adi::DigitalOut awp;
-extern adi::Pneumatics intup;
+extern adi::DigitalOut intup;
 extern Optical distance;
 extern Motor arm;
 extern adi::DigitalOut armc;
-extern Motor intake2;
+extern adi::DigitalOut jararm;
+extern Motor hooks;
 
 #endif  // _PROS_MAIN_H_
