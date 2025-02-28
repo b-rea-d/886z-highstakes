@@ -100,5 +100,6 @@ extern Motor arm;
 extern adi::DigitalOut armc;
 extern adi::DigitalOut jararm;
 extern Motor hooks;
+extern adi::DigitalOut tipper;
 
 #endif  // _PROS_MAIN_H_

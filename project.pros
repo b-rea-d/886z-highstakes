@@ -1,7 +1,7 @@
 {
   "py/object": "pros.conductor.project.Project",
   "py/state": {
-    "project_name": "r rigush",
+    "project_name": "skills",
     "target": "v5",
     "templates": {
       "LemLib": {
@@ -299,7 +299,7 @@
     },
     "upload_options": {
       "description": "My PROSeason",
-      "slot": 6
+      "slot": 1
     },
     "use_early_access": false
   }
