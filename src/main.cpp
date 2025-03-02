@@ -162,6 +162,10 @@ void on_center_button() {
 	}
 
 }
+
+
+    
+
 // bool coloring = true; //blue = false; red = true
 // bool  checkState = true;
 // void color_sort(){
@@ -297,7 +301,7 @@ left_side_motors.set_brake_mode(E_MOTOR_BRAKE_HOLD);
 // chassis.turnToHeading(166, 500);//turn to face goal 176
 // delay (100);//delay
 // chassis.moveToPoint(-24, -21, 1000, {false, 80});//go to goal -19, -33
-// chassis.waitUntil (28);
+// chassis.waitUntil (27);
 // mogo.set_value (true);
 // delay(100);
 // chassis.turnToHeading(308, 500);//turn to face double rings
@@ -312,23 +316,23 @@ left_side_motors.set_brake_mode(E_MOTOR_BRAKE_HOLD);
 // chassis.moveToPose(-60, -62, 180, 2000, {.forwards = true, .lead = 0.25, .maxSpeed = 127});//go to corner
 // chassis.moveToPoint(-60, -60, 200, {true, 127, 127});//push to intake
 // delay (50);
-// chassis.moveToPoint(-70, -70, 500, {true, 127, 127});//second push
+// chassis.moveToPoint(-80, -80, 600, {true, 127, 127});//second push
 // chassis.moveToPose(-48, -46, 205, 800, {.forwards = false, .lead = 0.2, .maxSpeed = 100});//move back to align with double alliance rings
 // chassis.turnToHeading(95, 500);//turn to face double alliance rings
 // intlift.set_value(true);//intake up
-// chassis.moveToPoint(-7, -48, 1700, {true});//go to double alliance rings
+// chassis.moveToPoint(-6, -48, 1700, {true, 100});//go to double alliance rings
 // chassis.waitUntil(1000);
 // intlift.set_value(false);
 // chassis.moveToPoint(-28, -45, 500, {false});//go back to have room to turn
 // chassis.turnToHeading(41, 450);//turn 41
-// chassis.moveToPoint(-12, -21, 1000, {true});//-12, -22 go to ladder
+// chassis.moveToPoint(-12, -24, 1000, {true});//-12, -22 go to ladder
 
 //blue neg good
 // chassis.setPose(10, -61, -108);
-// Astake(); //up
-// delay (550);
-// rest(); //down
-// delay (100);
+// // Astake(); //up
+// // delay (550);
+// // rest(); //down
+// // delay (100);
 // chassis.moveToPoint(15, -59, 1000, {false});//move back 24, -56
 // delay (100);//delay
 // chassis.turnToHeading(-166, 500);//turn to face goal 176
@@ -349,18 +353,18 @@ left_side_motors.set_brake_mode(E_MOTOR_BRAKE_HOLD);
 // chassis.moveToPose(60, -62, -180, 2000, {.forwards = true, .lead = 0.25, .maxSpeed = 127});//go to corner
 // chassis.moveToPoint(60, -60, 200, {true, 127, 127});//push to intake
 // delay (50);
-// chassis.moveToPoint(70, -70, 500, {true, 127, 127});//second push
+// chassis.moveToPoint(80, -80, 600, {true, 127, 127});//second push
 // chassis.moveToPose(48, -46, -205, 800, {.forwards = false, .lead = 0.2, .maxSpeed = 100});//move back to align with double alliance rings
 // chassis.turnToHeading(-95, 500);//turn to face double alliance rings
 // intlift.set_value(true);//intake up
-// chassis.moveToPoint(5, -48, 1700, {true});//go to double alliance rings
+// chassis.moveToPoint(4, -48, 1700, {true, 100});//go to double alliance rings
 // chassis.waitUntil(1000);
 // intlift.set_value(false);
 // chassis.moveToPoint(28, -45, 500, {false});//go back to have room to turn
 // chassis.turnToHeading(-41, 450);//turn 41
 // chassis.moveToPoint(14, -26, 1000, {true});//-12, -22 go to ladder
 
-//r sig solo awp (start positive)
+// r sig solo awp (start positive)
 // chassis.setPose(10, -61, -108);
 // Astake(); //up
 // delay (550);
@@ -378,11 +382,11 @@ left_side_motors.set_brake_mode(E_MOTOR_BRAKE_HOLD);
 // hooks.move (110);
 // chassis.moveToPoint(38, -26, 1000, {true});//go intake middle pos ring
 // chassis.turnToHeading (-151, 450);//turn to have enough room to swing
-// chassis.moveToPose(11, -52, -76, 2000, {.forwards = true, .lead = 0.35});//move to pose swing to alliance stake doube ring
+// chassis.moveToPose(11, -52, -76, 2000, {.forwards = true, .lead = 0.35, .maxSpeed = 100});//move to pose swing to alliance stake doube ring
 // chassis.waitUntil(30.5);
 // mogo.set_value(false);//drop goal
-// chassis.moveToPose(-48, -29, -44, 2500, {.forwards = true, .lead = 0.3});//move to pose to get blue one out and get the pos middle
-// chassis.waitUntil(48);//wait until
+// chassis.moveToPose(-48, -29, -44, 2500, {.forwards = true, .lead = 0.3, .maxSpeed = 100});//move to pose to get blue one out and get the pos middle
+// chassis.waitUntil(52);//wait until
 // hooks.move (0);//stop hooks
 // chassis.turnToHeading(-91, 500);//turn so back faces goal
 // chassis.moveToPoint(-27, -24, 1000, {false, 80});//go back to goal
@@ -416,8 +420,8 @@ left_side_motors.set_brake_mode(E_MOTOR_BRAKE_HOLD);
 // chassis.moveToPose(-11, -52, 76, 2000, {.forwards = true, .lead = 0.35, .maxSpeed = 100});//move to pose swing to alliance stake doube ring
 // chassis.waitUntil(30.5);
 // mogo.set_value(false);//drop goal
-// chassis.moveToPose(48, -29, 44, 2500, {.forwards = true, .lead = 0.3});//move to pose to get blue one out and get the pos middle
-// chassis.waitUntil(49);//wait until
+// chassis.moveToPose(48, -29, 44, 2500, {.forwards = true, .lead = 0.3, .maxSpeed = 100});//move to pose to get blue one out and get the pos middle
+// chassis.waitUntil(52);//wait until
 // hooks.move (0);//stop hooks
 // chassis.turnToHeading(91, 500);//turn so back faces goal
 // chassis.moveToPoint(27, -24, 1000, {false, 80});//go back to goal
@@ -430,91 +434,53 @@ left_side_motors.set_brake_mode(E_MOTOR_BRAKE_HOLD);
 // chassis.turnToHeading(0, 450);//turn to face ladder 0
 // chassis.moveToPoint(-14, -15, 3000, {true});//go to ladder 14, -22
 
-
-
-//b pos high stake
-// chassis.setPose (35.5,-52.5,0);
-// intake.move(127);//only first stage on
-// chassis.moveToPoint(35.5, -18.9, 2000, {true, 90, 60});//go forward to have room to turn for left ring
+//b pos no rush
+// chassis.setPose(-10, -61, 108);
+// Astake(); //up
+// delay (550);
+// rest(); //down
 // delay (100);
-// chassis.turnToHeading(22.5, 1000, {.maxSpeed = 50, .minSpeed = 30});//turn to face left ring
-// delay (100);
-// chassis.moveToPoint(39.18, -8.6, 1000, {true, 80, 50});//get left ring
-// delay (100);
-// chassis.turnToHeading(45.7, 1000, {.maxSpeed = 50, .minSpeed = 30}); //turn back to face goal
-// delay (100);
-// chassis.moveToPoint(28.8, -16.1, 1500, {false, 80, 50});//go back to goal
-// chassis.waitUntil(14);
-// mogo.set_value(true);//clamp
-// delay (100);
-// chassis.turnToHeading(86, 1000, {.maxSpeed = 50, .minSpeed = 30});//turn to face double middle ring
-// hooks.move (-127);
-// delay (100);
-// chassis.moveToPoint(46.8, -16.2, 1500, {true, 80, 50});//go intake middle ring
-// Aload();
-// delay (100);
-// chassis.turnToHeading(58, 1000, {.maxSpeed = 50, .minSpeed = 30});//turn to align with the lady brown position
-// delay (100);
-// chassis.moveToPoint(60, -4.2, 1500, {true, 80, 50});//go to ladybrown position
-// chassis.waitUntil(100000);
-// hooks.move (0); //stop second stage
-// Astake();//ladybrown up
-// delay (1000);
-// rest (); //ladybrown down
-// delay (100);
-// chassis.moveToPoint(37.6, -25, 1000, {false, 100, 80}); //move back to the middle ring
-// hooks.move (-127);
-// delay (100);
-// chassis.turnToHeading(123, 1000, {.maxSpeed = 50, .minSpeed = 30}); //turn to corner
-// delay (100);
-// chassis.moveToPoint(71.1, -54.2, 1000, {true, 100, 80});//go to intake corner ring
-// hooks.move (0);
-// delay (800);
-// chassis.moveToPoint(71.1, -60, 500, {true, 80, 50});//push a little
-// chassis.moveToPoint(60.4, -52.8, 1000, {false, 80, 50});//move back to align with single ring
-// delay (100);
-// chassis.turnToHeading(88.72, 1000, {.maxSpeed = 50, .minSpeed = 30});//turn so back align with single ring
-// delay (100);
-// chassis.moveToPoint(-2.4, -52.8, 2000, {false, 100, 80});//sweep the ring out of the way
-// mogo.set_value(false);
-// delay (100);
-// chassis.moveToPoint(7, -54.2, 1000, {true, 80, 50});//go forward to align with alliance stake
-// delay (100);
-// chassis.turnToHeading(-1.41, 1000, {.maxSpeed = 50, .minSpeed = 30});//turn back to face alliance stake
-// delay (100);
-// chassis.moveToPoint(7, -65, 1000, {false, 80, 50}); //go back to intake onto stake
+// chassis.moveToPoint(-15, -59, 1000, {false});//move back 24, -56
+// delay (100);//delay
+// chassis.turnToHeading(166, 500);//turn to face goal 176
+// delay (100);//delay
+// chassis.moveToPoint(-22, -21, 1000, {false, 80});//go to goal -19, -33
+// chassis.waitUntil (28);
+// // hooks.move (-127);
+// mogo.set_value (true);
+// chassis.turnToHeading(268, 450);//turn to face middle pos ring
 // intake.move (127);
-// hooks.move (-127);//outtake
-// delay (700);
-// intake.move (0);
-// hooks.move (0);
-// chassis.moveToPoint(3, -36, 1000, {true, 100, 80});//go to touch pole
-
-//b solo solo awp
-// chassis.setPose(-24, -53, 180);
-// chassis.moveToPoint(0, 0, 1000, {false, 80, 50});//go back to goal
-// delay (100);
-// chassis.moveToPoint(0, 0, 1000, {false, 80, 50});//clamp to goal
-// mogo.set_value(true);
-// delay (100);
-// chassis.turnToHeading(0, 1000, {.maxSpeed = 50, .minSpeed = 30});//turn to face left middle rings
-// delay (100);
-// hooks.move(-127);
-// intake.move(127);
-// chassis.moveToPoint(0, 0, 1000, {true, 90, 60});//go intake that blue ring
-// delay (100);
-// chassis.turnToHeading(0, 1000, {.maxSpeed = 50, .minSpeed = 30});//turn to fave the white line on the right side
-// delay (100);
-// chassis.moveToPoint(0, 0, 3000, {true, 90, 60});//go to the right side and intake double ring
+// hooks.move (110);
+// chassis.moveToPoint(-38, -26, 1000, {true});//go intake middle pos ring
+// chassis.moveToPoint(-36, -15, 1000, {false});//move back -36,  -15
+// // intake.move (-127);//outtake
+// chassis.waitUntil(10);
 // mogo.set_value(false);
-// delay (100);
-// chassis.turnToHeading(0, 1000, {.maxSpeed = 50, .minSpeed = 30});//turn to push all rings out of the way like 90 degrees
-// delay (100);
-// chassis.moveToPoint(0, 0, 1000, {true, 90, 60});//push eveyrthing out of the way
-// delay (100);
-// chassis.moveToPoint(0, 0, 1000, {false, 90, 60});//move back to aligin with stake
-// delay (100);
-// chassis.moveToPoint(float x, float y, int timeout);
+// chassis.moveToPoint(-45, -24, 1000, {true});//move forward -45, -24
+// chassis.turnToHeading(176, 500);//turn to face goal 176
+// chassis.moveToPoint(-46, -10, 1000, {false, 70});//move back to goal SLOWLY -46, -10
+// chassis.waitUntil(13);
+// mogo.set_value(true);
+// hooks.move (-127);
+// chassis.moveToPose(-20, -59, 152, 1700, {.forwards = true, .lead = .3});//move to pose to go to wall -25, -47, 152
+// chassis.turnToHeading(250, 500);//turn to face corner 250
+// hooks.move (127);
+// chassis.moveToPoint(-53, -70, 2000, {.forwards = true, .maxSpeed = 127});//go to corner
+// chassis.moveToPoint(-60, -70, 200, {true, 127, 127});//push to intake
+// delay (50);
+// chassis.moveToPoint(-80, -80, 600, {true, 127, 127});//second push
+// chassis.moveToPoint(-39, -53, 800, {.forwards = false, .maxSpeed = 100});//move back to align with double alliance rings
+// chassis.turnToHeading(396, 500);//turn to face double alliance rings
+// chassis.moveToPoint(-16, -21, 1700, {true, 100});//go to double alliance rings
+// chassis.waitUntil(10);
+// mogo.set_value(false);
+// chassis.waitUntil(1000);
+// intlift.set_value(false);
+// chassis.moveToPoint(-28, -45, 500, {false});//go back to have room to turn
+// chassis.turnToHeading(41, 450);//turn 41
+// chassis.moveToPoint(-12, -21, 1000, {true});//-12, -22 go to ladder
+
+
 
 //b goal rush
 // chassis.setPose(-61, -53, 30);//setpose -57, 51.5, 16
@@ -599,39 +565,39 @@ left_side_motors.set_brake_mode(E_MOTOR_BRAKE_HOLD);
 // mogo.set_value(false);//drop off goal
 
 //r tip rush
-// chassis.setPose(61, -53, -20);//setpose -57, 51.5, 16
-// intake.move (127);//first stage on
-// chassis.moveToPoint(48, -16, 1000, {true, 127});//rush goal
-// tipper.set_value(true);
-// chassis.waitUntil(1500);
-// tipper.set_value(false);
-// chassis.moveToPoint(55, -35, 1000, {false, 127});//go back to bring goal back -57, -37
-// // intake.move (0);
-// delay (100);
-// chassis.turnToHeading(95, 1000 );//turn so back faces stand goal
-// delay (100);//delay
-// chassis.moveToPoint(20, -29, 1000, {false, 70});//go back to clamp -47, -21
-// chassis.waitUntil(30);//waituntil
-// mogo.set_value(true);//clamp
-// delay (100);//delay
-// chassis.moveToPoint(55, -34, 1000, {true, 80});//gp to wall right wall
-// hooks.move (110);
-// chassis.turnToHeading(156, 1000);//turn to corner 253
-// chassis.moveToPoint(63, -56, 2000, {true});//go forward to rings -53, -70
-// intake.move(127);
-// awp.set_value(true);//awp arm down
-// chassis.turnToHeading(203, 1000, {.maxSpeed = 100, .minSpeed = 80});//sweep tun 312
-// delay (500);//delay
-// chassis.turnToHeading(175, 1000, {.maxSpeed = 50, .minSpeed = 30});//turn back 241
-// awp.set_value(false);//arm back up
-// delay (100);//delay
-// chassis.moveToPoint(63, -58, 1000, {true, 70, 30});//move forwrard to intake -54, -71
-// delay (1000);//delay
-// chassis.moveToPoint(62, -52, 500, {false});//62, -52
+chassis.setPose(61, -53, -20);//setpose -57, 51.5, 16
+intake.move (127);//first stage on
+chassis.moveToPoint(48, -16, 1000, {true, 127});//rush goal
+tipper.set_value(true);
+chassis.waitUntil(1500);
+tipper.set_value(false);
+chassis.moveToPoint(55, -35, 1000, {false, 127});//go back to bring goal back -57, -37
 // intake.move (0);
-// chassis.turnToHeading(313, 800, {.maxSpeed = 70, .minSpeed = 30});//turn to ladder 402
-// chassis.moveToPoint(16, -23, 3000, {true, 70, 30});//go to touch ladder -19, -24
-// mogo.set_value(false);//drop off goal
+delay (100);
+chassis.turnToHeading(95, 1000 );//turn so back faces stand goal
+delay (100);//delay
+chassis.moveToPoint(20, -29, 1000, {false, 70});//go back to clamp -47, -21
+chassis.waitUntil(30);//waituntil
+mogo.set_value(true);//clamp
+delay (100);//delay
+chassis.moveToPoint(55, -34, 1000, {true, 80});//gp to wall right wall
+hooks.move (110);
+chassis.turnToHeading(156, 1000);//turn to corner 253
+chassis.moveToPoint(63, -56, 2000, {true});//go forward to rings -53, -70
+intake.move(127);
+awp.set_value(true);//awp arm down
+chassis.turnToHeading(203, 1000, {.maxSpeed = 100, .minSpeed = 80});//sweep tun 312
+delay (500);//delay
+chassis.turnToHeading(175, 1000, {.maxSpeed = 50, .minSpeed = 30});//turn back 241
+awp.set_value(false);//arm back up
+delay (100);//delay
+chassis.moveToPoint(63, -58, 1000, {true, 70, 30});//move forwrard to intake -54, -71
+delay (1000);//delay
+chassis.moveToPoint(62, -52, 500, {false});//62, -52
+intake.move (0);
+chassis.turnToHeading(313, 800, {.maxSpeed = 70, .minSpeed = 30});//turn to ladder 402
+chassis.moveToPose(48, -24, 0, 3000, {.forwards = true, .lead = .3});//go to touch ladder -19, -24
+mogo.set_value(false);//drop off goal
 
 //r goal rush
 // chassis.setPose(-61, -49, 20.7);//setpose 
@@ -760,193 +726,194 @@ left_side_motors.set_brake_mode(E_MOTOR_BRAKE_HOLD);
 // chassis.waitUntil(10);//drop goal
 
 //hard skills
-chassis.setPose(0, -69, 0);
-intake.move (127);
-hooks.move (127);//outtake
-delay (700);
- intake.move (0);
- hooks.move (0);
-chassis.moveToPoint(0, -56, 1000, {true});//go forward .09 -55.3
+// chassis.setPose(0, -69, 0);
+// intake.move (127);
+// hooks.move (127);//outtake
+// delay (700);
+//  intake.move (0);
+//  hooks.move (0);
+// chassis.moveToPoint(0, -56, 1000, {true});//go forward .09 -55.3
+// // delay (100);//delay
+// chassis.turnToHeading(-90, 550);//turn to face goal 273
+// // delay (100);//delay
+// chassis.moveToPoint(23.5, -54, 1500, {false, 70});//go for goal 17.9, -56.7
+// chassis.waitUntil(13);//wait until
+// mogo.set_value(true);//clamp
 // delay (100);//delay
-chassis.turnToHeading(-90, 550);//turn to face goal 273
+// chassis.turnToHeading(0, 1000, {.maxSpeed = 50, .minSpeed = 30});//turn to face ring 369
+// // delay (100);//delay
+// chassis.moveToPoint(20, -36, 1300, {true}); //go for ring
+// intake.move (127);
+// hooks.move (110);//intake on
 // delay (100);//delay
-chassis.moveToPoint(23.5, -54, 1500, {false, 70});//go for goal 17.9, -56.7
-chassis.waitUntil(13);//wait until
-mogo.set_value(true);//clamp
-delay (100);//delay
-chassis.turnToHeading(0, 1000, {.maxSpeed = 50, .minSpeed = 30});//turn to face ring 369
+// chassis.turnToHeading(32, 700);//turn to align with farthest ring
+// // delay (100);//delay
+// chassis.moveToPoint(41, -4, 800, {true});//go to the alignment position
+// // delay (100);//delay
+// chassis.turnToHeading(29, 500);//turn to align with farther ring
+// // delay (100);//delay
+// chassis.moveToPoint(44, 17, 2000, {true});//go to farther ring
+// Aload();//ladybrown to setting postition
+// delay (1000);//delay
+// chassis.moveToPoint(43, -6, 1000, {false});//go back to orginal position
 // delay (100);//delay
-chassis.moveToPoint(20, -36, 1300, {true}); //go for ring
-intake.move (127);
-hooks.move (110);//intake on
-delay (100);//delay
-chassis.turnToHeading(32, 700);//turn to align with farthest ring
+// chassis.turnToHeading(90, 600);//turn to face stake
+// hooks.move (0);
 // delay (100);//delay
-chassis.moveToPoint(41, -4, 800, {true});//go to the alignment position
+// chassis.moveToPoint(67, -6, 1000, {true, 50});//go forward to stake and intake one ring in the process
+// chassis.waitUntil(100);
 // delay (100);//delay
-chassis.turnToHeading(29, 500);//turn to align with farther ring
-// delay (100);//delay
-chassis.moveToPoint(44, 17, 2000, {true});//go to farther ring
-Aload();//ladybrown to setting postition
-delay (1000);//delay
-chassis.moveToPoint(43, -6, 1000, {false});//go back to orginal position
-delay (100);//delay
-chassis.turnToHeading(90, 600);//turn to face stake
-hooks.move (0);
-delay (100);//delay
-chassis.moveToPoint(67, -6, 1000, {true, 50});//go forward to stake and intake one ring in the process
-chassis.waitUntil(100);
-delay (100);//delay
-Astake();//ladybrown up and score!
-delay(1000);//delay
-chassis.moveToPoint(45, -6, 2000, {false});//move back to align with 3 rings
-delay (500);//delay
-rest ();//ladybrown down
-delay (500);//delay
-chassis.turnToHeading(180, 600);//turn to 3 rings
-hooks.move (110);
-// delay (100);
-chassis.moveToPoint(45, -64, 3500, {true, 65});//go forward and intake 3 rings
-// delay (100);
-chassis.turnToHeading(48, 800);//turn to face last ring 9
-// delay (100);//delay
-chassis.moveToPoint(56, -54, 1500, {true});//go for last ring 58.7, -51
-// delay (100);//delay
-chassis.turnToHeading(-32, 800);//turn to face corner 348
-// delay (100);//delay
-chassis.moveToPoint(61, -63, 1000, {false, 90, 60});//move bacl into corner 63, -64
-// delay (100);//delay
-chassis.moveToPoint(53, -46, 3000, {true, 80, 50});//go forward to double line in order to align with left double ring
-intake.move (-127);
-hooks.move (-127);
-mogo.set_value(false);//drop it off
-delay (100);//delay
-chassis.turnToHeading(0, 350); //turn to align with double ring
-
-// // chassis.setPose (53, -46, 0);
-chassis.moveToPoint(54, 15, 2000, {true});//go forward to align with blue goal
-hooks.move (0);
+// Astake();//ladybrown up and score!
+// delay(1000);//delay
+// chassis.moveToPoint(45, -6, 2000, {false});//move back to align with 3 rings
 // delay (500);//delay
-chassis.turnToHeading(-54, 450);//turn to blue goal
+// rest ();//ladybrown down
+// delay (500);//delay
+// chassis.turnToHeading(180, 600);//turn to 3 rings
+// hooks.move (110);
+// // delay (100);
+// chassis.moveToPoint(45, -64, 3500, {true, 65});//go forward and intake 3 rings
+// // delay (100);
+// chassis.turnToHeading(48, 800);//turn to face last ring 9
+// // delay (100);//delay
+// chassis.moveToPoint(56, -54, 1500, {true});//go for last ring 58.7, -51
+// // delay (100);//delay
+// chassis.turnToHeading(-32, 800);//turn to face corner 348
+// // delay (100);//delay
+// chassis.moveToPoint(61, -63, 1000, {false, 90, 60});//move bacl into corner 63, -64
+// // delay (100);//delay
+// chassis.moveToPoint(53, -46, 3000, {true, 80, 50});//go forward to double line in order to align with left double ring
+// intake.move (-127);
+// hooks.move (-127);
+// mogo.set_value(false);//drop it off
 // delay (100);//delay
-chassis.moveToPoint(23, 38, 1800);//go to blue goal
-// delay (100);//delay
-chassis.turnToHeading(27, 450);//turn so intake faces right mogo with blue ring on it
-// delay (100);//delay
-intake.move (0);
-chassis.moveToPoint(26, 49, 800);//push it to wall to have room to turn
-// delay (100);
-chassis.turnToHeading(68, 500);//turn goal faces corner
-// delay (100);//delay
-chassis.moveToPoint(58, 55, 1400, {true, 127});//go to corner
-// delay (100);
-chassis.turnToHeading (60, 500);//52
-// delay (100);
-chassis.moveToPoint(31, 41, 1000, {false});//move it back to align with empty goal 31 41
-// delay (100);//delay
-chassis.turnToHeading(90, 550);//turn so back faces goal 90
-// delay (100);//delay
-chassis.moveToPoint(7, 40, 2000, {false, 65});//move to goal 3 38
-chassis.waitUntil(19);//wait until
-mogo.set_value(true);//clamp
-delay (100);//delay
-chassis.turnToHeading(129, 500);//turn to intake that one ring
-// delay (100);//delay
-chassis.moveToPoint(27, 22, 1000, {true, 100});//go to intake that one ring we missed
-intake.move (127);
-hooks.move (127);
-delay (100);//delay
-intake.move (127);
-chassis.turnToHeading(221, 700);//turn to go to middle
-delay (100);//delay
-chassis.moveToPoint(-36, -52, 3200, {true, 70});//go for middle ring under ladder AND EVERYTHING THAT IS IN THAT HORIZONTAL PATH...so intake 3 rings
-chassis.waitUntil(1);
-hooks.move(0);
-delay (100);//delay
-chassis.waitUntil(50);
-hooks.move(110);//hooks back on//intake bottom ring
-chassis.turnToHeading(201, 1000);//turn to intake bottom ring 552
-// delay (100);//delay
-chassis.moveToPoint(-36, -64, 1000, {true});//go to intake bottom ring -32, -71
-// delay (100);//delay
-chassis.turnToHeading(304, 1000);//turn to side ring
-// delay (100);//delay
-chassis.moveToPoint(-49, -58, 1000, {true, 90, 60});//go to intake side ring
-// delay (100);//delay
-chassis.turnToHeading(22, 1000);//turn so back faces corner
-// delay (100);//delay
-chassis.moveToPoint(-50, -65, 800, {false });//go back and drop it off
-intake.move(-127);
-hooks.move(-127);
-delay (100);//delay
-chassis.moveToPoint(-39, -33, 1000, {true});//go to intake that ring -38, -38
+// chassis.turnToHeading(0, 350); //turn to align with double ring
 
-// chassis.setPose(-36, -33, 22);
-mogo.set_value(false);//drop off goalfalse
-chassis.waitUntil(10);
-intake.move (-127);
-hooks.move (-127);
-Aload();//ladybrown load
-delay (100);//delay
-intake.move (127);
-hooks.move (110);
-chassis.turnToHeading(-29, 600);//turn so back faces goal
+// // // chassis.setPose (53, -46, 0);
+// chassis.moveToPoint(54, 15, 2000, {true});//go forward to align with blue goal
+// hooks.move (0);
+// // delay (500);//delay
+// chassis.turnToHeading(-54, 450);//turn to blue goal
+// // delay (100);//delay
+// chassis.moveToPoint(26, 38, 1800);//go to blue goal
+// // delay (100);//delay
+// chassis.turnToHeading(27, 450);//turn so intake faces right mogo with blue ring on it
+// // delay (100);//delay
+// intake.move (0);
+// chassis.moveToPoint(26, 49, 800);//push it to wall to have room to turn
+// // delay (100);
+// chassis.turnToHeading(68, 500);//turn goal faces corner
+// // delay (100);//delay
+// chassis.moveToPoint(58, 55, 1400, {true, 127});//go to corner
+// // delay (100);
+// // chassis.turnToHeading (60, 500);//52
+// // delay (100);
+// chassis.moveToPose(31, 42, 60, 1300, {.forwards = false, .lead = .2, .maxSpeed = 100});//move it back to align with empty goal 31 41
+// // delay (100);//delay
+// chassis.turnToHeading(90, 550);//turn so back faces goal 90
+// // delay (100);//delay
+// chassis.moveToPoint(7, 40, 2000, {false, 65});//move to goal 3 38
+// chassis.waitUntil(19);//wait until
+// mogo.set_value(true);//clamp
 // delay (100);//delay
-chassis.moveToPoint(-17, -58, 1500, {false, 70});//get goal
-chassis.waitUntil (26);
-mogo.set_value (true);
-delay (100);
-chassis.turnToHeading(-21, 450);//turn to face double line -21
+// chassis.turnToHeading(129, 500);//turn to intake that one ring
+// // delay (100);//delay
+// chassis.moveToPoint(27, 22, 1000, {true, 100});//go to intake that one ring we missed
+// intake.move (127);
+// hooks.move (110);
+// delay (100);//delay
+// intake.move (127);
+// chassis.turnToHeading(221, 700);//turn to go to middle
+// delay (100);//delay
+// chassis.moveToPoint(-36, -52, 2900, {true, 70});//go for middle ring under ladder AND EVERYTHING THAT IS IN THAT HORIZONTAL PATH...so intake 3 rings
+// chassis.waitUntil(1);
+// hooks.move(0);
+// delay (100);//delay
+// chassis.waitUntil(50);
+// hooks.move(110);//hooks back on//intake bottom ring
+// chassis.turnToHeading(201, 1000);//turn to intake bottom ring 552
+// // delay (100);//delay
+// chassis.moveToPoint(-36, -64, 1000, {true});//go to intake bottom ring -32, -71
+// // delay (100);//delay
+// chassis.turnToHeading(304, 1000);//turn to side ring
+// // delay (100);//delay
+// chassis.moveToPoint(-49, -58, 1000, {true, 90, 60});//go to intake side ring
+// // delay (100);//delay
+// chassis.turnToHeading(22, 1000);//turn so back faces corner
+// // delay (100);//delay
+// chassis.moveToPoint(-50, -65, 800, {false });//go back and drop it off
+// intake.move(-127);
+// hooks.move(-127);
+// delay (100);//delay
+// chassis.moveToPoint(-39, -33, 1000, {true});//go to intake that ring -38, -38
+
+// // chassis.setPose(-36, -33, 22);
+// mogo.set_value(false);//drop off goalfalse
+// chassis.waitUntil(10);
+// intake.move (-127);
+// hooks.move (-127);
+// Aload();//ladybrown load
+// delay (100);//delay
+// intake.move (127);
+// hooks.move (110);
+// chassis.turnToHeading(-29, 600);//turn so back faces goal
+// // delay (100);//delay
+// chassis.moveToPoint(-13, -58, 1500, {false, 70});//get goal
+// chassis.waitUntil (26);
+// mogo.set_value (true);
 // delay (100);
-chassis.moveToPoint(-33, -10, 2000, {true, 100}); //go for double line
+// chassis.turnToHeading(-21, 450);//turn to face double line -21
+// // delay (100);
+// chassis.moveToPoint(-33, -9, 2000, {true, 100}); //go for double line
+// // delay (100);
+// chassis.turnToHeading(-90, 700);//turn to face stake
+// hooks.move (0);
+// // delay (100);//delay
+// chassis.moveToPoint(-57, -9, 1000, {true,50});//go forward to stake and intake one ring in the process
+// chassis.waitUntil(100);
+// delay (100);//delay
+// Astake();//ladybrown up and score!
+// delay(500);//delay
+// intake.move (0);
+// chassis.moveToPoint(-42, -9, 700, {false});//back off to align with solo red rings nearest
+// delay (700);//delay
+// rest ();//ladybrown down
+// delay (700);//delay
+// chassis.turnToHeading(0, 800);//turn 90 degrees to face red ring
+// // delay (100);//delay
+// chassis.moveToPoint(-42, 12, 1000, {true});//go to intake that one solo red ring
+// intake.move (127);
+// hooks.move (110);
+// // delay (100);//delay
+// chassis.turnToHeading(90, 700, {.maxSpeed = 80});//turn 90 degrees and intake the other one
+// // delay (100);//delay
+// chassis.moveToPoint (-22, 16, 1000, {true, 100, 80}); //go to intake the other one
+// // delay (100);
+// chassis.turnToHeading(300, 800, {.maxSpeed = 70});//turn to intake the double rings that are vertical
+// delay (100);//delay
+// chassis.moveToPoint(-45, 36, 1000, {true, 100});//go to double ring
+// delay (100);//delay
+// chassis.turnToHeading(297, 800, {.maxSpeed = 80});//turn to face side ring
+// // delay (100);//delay
+// chassis.moveToPoint(-56, 37, 1000, {true, 100});//go to sidering
+// // delay (100);//delay
+// chassis.turnToHeading (390, 1000, {.maxSpeed = 80}); //turn to 3rd ring
+// // delay (100);
+// chassis.moveToPoint(-47, 47, 1000, {true, 100});//go to 3rd ring
+// // delay (100);//delay
+// chassis.turnToHeading(131, 700);//turn so back faces corner
+// // delay (100);
+// chassis.moveToPoint(-37, 35, 700, {true});//go forward a bit
+// chassis.waitUntil(2);
+// mogo.set_value(false);
 // delay (100);
-chassis.turnToHeading(-90, 700);//turn to face stake
-hooks.move (0);
-// delay (100);//delay
-chassis.moveToPoint(-57, -9, 1000, {true,50});//go forward to stake and intake one ring in the process
-chassis.waitUntil(100);
-delay (100);//delay
-Astake();//ladybrown up and score!
-delay(500);//delay
-intake.move (0);
-chassis.moveToPoint(-40, -9, 700, {false});//back off to align with solo red rings nearest
-delay (700);//delay
-rest ();//ladybrown down
-delay (700);//delay
-chassis.turnToHeading(0, 800);//turn 90 degrees to face red ring
-// delay (100);//delay
-chassis.moveToPoint(-40, 12, 1000, {true});//go to intake that one solo red ring
-intake.move (127);
-hooks.move (110);
-// delay (100);//delay
-chassis.turnToHeading(90, 700, {.maxSpeed = 80});//turn 90 degrees and intake the other one
-// delay (100);//delay
-chassis.moveToPoint (-21, 13, 1000, {true, 100, 80}); //go to intake the other one
-// delay (100);
-chassis.turnToHeading(300, 800, {.maxSpeed = 70});//turn to intake the double rings that are vertical
-delay (100);//delay
-chassis.moveToPoint(-45, 36, 1000, {true, 100});//go to double ring
-delay (100);//delay
-chassis.turnToHeading(297, 800, {.maxSpeed = 80});//turn to face side ring
-// delay (100);//delay
-chassis.moveToPoint(-56, 37, 1000, {true, 100});//go to sidering
-// delay (100);//delay
-chassis.turnToHeading (401.88, 1000, {.maxSpeed = 80}); //turn to 3rd ring
-// delay (100);
-chassis.moveToPoint(-47, 45, 1000, {true, 100});//go to 3rd ring
-// delay (100);//delay
-chassis.turnToHeading(131, 700);//turn so back faces corner
-// delay (100);
-chassis.moveToPoint(-37, 35, 700, {true});//go forward a bit
-chassis.waitUntil(3);
-mogo.set_value(false);
-delay (100);
-intake.move (0);
-hooks.move(0);
-chassis.turnToHeading(310, 800);//turnso front faces goal
-chassis.moveToPoint(-56, 50,800, {true, 127, 127});//push goal in with intake
-Astake();//go hang
-chassis.moveToPoint(0, 0, 5000, {false});
+// intake.move (0);
+// hooks.move(0);
+// chassis.turnToHeading(300, 800);//turnso front faces goal
+// chassis.moveToPoint(-59, 46,900, {true, 127, 127});//push goal in with intake
+// intake.move (-127);
+// chassis.moveToPoint(0, 0, 5000, {false, 110});
+// Astake();//go hang
 
 //safe skills 
 // chassis.setPose(0, -69, 360);
